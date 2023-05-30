@@ -1,0 +1,54 @@
+.container{
+    background-color: #1a1a1a;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    overflow-y: hidden;
+    @include flex(center,center,column);
+    font-size: 5rem;
+    color: #ff4500;
+
+
+    .container_absolute-one,.container_absolute-two{
+        @include flex(flex-start,center,column);
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background-color: #FBFEFB;
+        color: #1a1a1a;
+
+        h1{
+            position: absolute;
+            font-size: 30rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .container_absolute-one{
+        top: 0;
+
+        h1{
+            bottom: 0;
+            transform: translateY(20rem);
+        }
+
+        h3{
+            display: inline-block;
+            position: absolute;
+            font-size: 2rem;
+            font-weight: lighter;
+            margin-top: 30px;
+        }
+    }
+
+    .container_absolute-two{
+        bottom: 0;
+
+        h1{
+            top: 0;
+            transform: translateY(-19rem);
+        }
+    }
+}

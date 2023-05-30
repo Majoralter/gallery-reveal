@@ -1,0 +1,28 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+html,body{
+    overflow-x: hidden;
+
+    // ::-webkit-scrollbar {
+    //         display: none;
+    //     }
+}
+
+body{
+    background-color: #fff;
+}
+
+@mixin flex($justify-content, $align-items, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@import "header";
+@import "content";

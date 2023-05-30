@@ -1,0 +1,18 @@
+header{
+    nav{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        width: calc(100vw - 3rem);
+        z-index: 1;
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
