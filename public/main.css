@@ -69,7 +69,6 @@ header nav a {
 }
 .container .container_absolute-one h3 {
   display: inline-block;
-  position: absolute;
   font-size: 2rem;
   font-weight: lighter;
   margin-top: 30px;
